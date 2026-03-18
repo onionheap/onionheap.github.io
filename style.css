@@ -38,6 +38,40 @@ body {
   transition: 0.2s;
 }
 
-.menu a:hover {
-  border-bottom: 1px solid white;
+/* camadas glitch */
+.menu a::before,
+.menu a::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/* camada roxa */
+.menu a:hover::before {
+  color: #a020f0;
+  left: 2px;
+  text-shadow: -2px 0 #ff00ff;
+  opacity: 1;
+  animation: glitch 0.3s infinite;
+}
+
+/* camada azul */
+.menu a:hover::after {
+  color: #00ffff;
+  left: -2px;
+  text-shadow: 2px 0 #00ffff;
+  opacity: 1;
+  animation: glitch 0.3s infinite reverse;
+}
+
+/* animação */
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
 }
