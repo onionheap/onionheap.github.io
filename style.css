@@ -32,10 +32,12 @@ body {
 .menu a {
   font-family: 'DirtyGrunge', sans-serif;
   text-decoration: none;
-  color: #7523d1;
+  color: #ffffff;
   font-size: 60px;
   border-bottom: 1px solid transparent;
   transition: 0.2s;
+  position: relative;
+  display: inline-block;
 }
 
 /* camadas glitch */
@@ -52,16 +54,16 @@ body {
 .menu a:hover::before {
   color: #a020f0;
   left: 2px;
-  text-shadow: -2px 0 #ff00ff;
+  text-shadow: -2px 0 #7523d1;
   opacity: 1;
   animation: glitch 0.3s infinite;
 }
 
 /* camada azul */
 .menu a:hover::after {
-  color: #00ffff;
+  color: #ff8000;
   left: -2px;
-  text-shadow: 2px 0 #00ffff;
+  text-shadow: 2px 0 #ff8000;
   opacity: 1;
   animation: glitch 0.3s infinite reverse;
 }
