@@ -26,14 +26,16 @@ body {
 
 .menu {
   display: flex;
-  gap: 60px;
+  gap: 90px;
 }
 
 .menu a {
   font-family: 'DirtyGrunge', sans-serif;
   text-decoration: none;
   color: #7523d1;
-  font-size: 30px;
+  font-size: 60px;
+  border-top: 3px double #ffffff;
+  border-left: 3px double #ffffff;
   border-bottom: 1px solid transparent;
   transition: 0.2s;
 }
