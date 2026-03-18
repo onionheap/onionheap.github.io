@@ -38,6 +38,7 @@ body {
   transition: 0.2s;
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 
 /* camadas glitch */
@@ -48,13 +49,14 @@ body {
   left: 0;
   top: 0;
   opacity: 0;
+  z-index: -1;
 }
 
 /* camada roxa */
 .menu a:hover::before {
   color: #a020f0;
   left: 2px;
-  text-shadow: -2px 0 #7523d1;
+  text-shadow: 0 0 10px #7523d1;
   opacity: 1;
   animation: glitch 0.3s infinite;
 }
