@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background: url("images/background.png") no-repeat center center fixed;
+  background: url("images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   font-family: Arial, sans-serif;
@@ -34,8 +34,6 @@ body {
   text-decoration: none;
   color: #7523d1;
   font-size: 60px;
-  border-top: 3px double #ffffff;
-  border-left: 3px double #ffffff;
   border-bottom: 1px solid transparent;
   transition: 0.2s;
 }
