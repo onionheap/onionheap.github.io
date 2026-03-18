@@ -30,6 +30,7 @@ body {
 }
 
 .menu a {
+  font-family: 'DirtyGrunge', sans-serif;
   text-decoration: none;
   color: white;
   font-size: 18px;
