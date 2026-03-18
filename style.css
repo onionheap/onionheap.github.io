@@ -18,9 +18,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* esquerda */
+.sidebar {
+  width: 250px;
+  background: #111;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.sidebar a:hover {
+  color: #bb00ff;
+}
+
+/* direita */
+.content {
+  flex: 1;
+  padding: 40px;
+}
 
 .logo {
-  width: 250px;
+  width: 500px;
   margin-bottom: 30px;
 }
 
